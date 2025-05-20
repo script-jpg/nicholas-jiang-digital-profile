@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Paper card demo</title>
+<style>
+  /* ----------  layout ---------- */
+  .paper-card {
+    display: flex;                   /* put image + text in one row  */
+    gap: 1.75rem;                    /* space between the columns    */
+    align-items: flex-start;         /* image and text align to top  */
+    max-width: 1100px;               /* keep lines from getting huge */
+    margin: 2rem auto;               /* center horizontally          */
+    padding: 0 1rem;
+  }
+
+  /* ----------  left column (thumbnail) ---------- */
+  .paper-card img {
+    width: 180px;        /* tweak as you like */
+    flex: 0 0 180px;     /* lock the column’s width */
+    height: auto;
+    border-radius: 6px;  /* soft corners look nicer */
+  }
+
+  /* ----------  right column (details) ---------- */
+  .details { flex: 1; }                  /* take the remaining width */
+  .title   { margin: 0 0 .5rem 0; }      /* tighten spacing */
+  .abstract{ margin: 0 0 1rem 0; }
+
+  /* authors / venue line  -------------------------------------- */
+  .authors a {                           /* coloured author links   */
+    text-decoration: none;
+  }
+  .authors a:hover { text-decoration: underline; }
+
+  .venue   { font-style: italic; }
+
+  /* action links “paper | code | bibtex” ------------------------ */
+  .links a {
+    text-decoration: none;
+    margin-right: .5rem;
+  }
+  .links a:hover { text-decoration: underline; }
+
+  /* ----------  responsiveness ---------- */
+  @media (max-width: 600px) {
+    .paper-card {
+      flex-direction: column;            /* stack on small screens  */
+      align-items: stretch;
+    }
+    .paper-card img {
+      width: 140px;
+      flex: none;                        /* let image shrink        */
+      margin-bottom: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<article class="paper-card">
+  <!-- left column -->
+  <img src="img/diversity.png" alt="=visualization of different solvers" />
+
+  <!-- right column -->
+  <div class="details">
+    <h2 class="title">Diversity-Driven Generalization in Mathematical Reasoning Ensembles</h2>
+
+    <p class="abstract">
+    We propose a framework for studying collaborative generalization in mathematical reasoning systems by training ensembles of solvers to learn from one another’s complete solutions in a fully self-supervised setting. Using the miniF2F benchmark, we construct ensembles with varying diversity, quantified via a novel Task2Vec-based Ensemble Diversity Coefficient (EDC). We fine-tune solvers on peer-generated proofs and evaluate generalization to held-out problems. We hypothesize that higher EDC predicts greater improvement, revealing diversity as a key factor in enabling ensemble-based peer learning.
+    </p>
+
+
+    <p class="authors">
+      <a href="index.html">Nicholas Jiang</a>
+    </p>
+
+    <!-- <p class="venue">
+      International Conference on Machine Learning, 2024.
+    </p> -->
+
+    <p class="links">
+      <a href="https://drive.google.com/file/d/17V9SR4IQSnjB_zbUtWWcfBcQfp-g175Q/view?usp=sharing">proposal</a>
+      <!-- <a href="#">code</a> |
+      <a href="#">bibtex</a> -->
+    </p>
+  </div>
+</article>
+
+</body>
+</html>

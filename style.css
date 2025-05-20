@@ -1,0 +1,142 @@
+.scroll_diag {
+    background-size: 40px 40px;
+    animation: diag 60s linear infinite;
+}
+
+
+@keyframes diag {
+    0% {
+        background-position-x: 0%;
+        background-position-y: 0%;
+    }
+    100% {
+        background-position-x: -100%;
+        background-position-y: 100%;
+        
+    }
+}
+
+    pre {
+      font-family: monospace;
+      white-space: pre;
+    }
+
+.bg {
+    background-image: url("./img/cubicle_quant_3.png");
+    background-size: cover;
+    background-position: center; /* Optional but usually desirable */
+    background-repeat: initial;
+    display: block;
+    text-align: center;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "MS PGothic", sans-serif;
+}
+
+.y-axis-flip-animation {
+  animation: y-axis-flip 1s ease-in-out infinite alternate;
+}
+
+@keyframes y-axis-flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+body {
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  text-align: center;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-content {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.unstyled-link {
+    color: inherit;        /* Keeps the text color the same as its parent */
+    text-decoration: underline;  /* Keeps the underline */
+  }
+
+.content {
+    margin: 0 auto;
+    background-color: rgba(30,35,48,255);
+    max-width: 70%;
+    text-align: center;
+    color: #aeb4c6;
+
+    border-radius: 10px;
+    border: 2px solid #aeb4c6;
+    margin-top: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.outer-wrapper {
+  display: flex;
+  justify-content: center; /* Centers inner content in page */
+  margin-top: 20px;
+}
+
+.img-text-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.img-text-wrapper img {
+  height: 100px;
+  height: auto;
+}
+
+pre {
+  font-family: monospace;
+  white-space: pre;
+  text-align: left;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #aeb4c6;
+  border-radius: 10px;
+  width: 20%;
+  padding: 10px;
+  /* margin-top: 20px; */
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:#aeb4c6;
+  height: 1px;
+}
+
+.blink {
+      animation: blinker 2s step-start infinite;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 50%;
+      }
+    }
