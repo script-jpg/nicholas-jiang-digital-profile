@@ -88,5 +88,55 @@
   </div>
 </article>
 
+<article class="paper-card">
+  <!-- left column -->
+  <img src="img/spine.png" alt="3‑D mesh of a spinal lesion">
+
+  <!-- right column -->
+  <div class="details">
+    <h2 class="title">Using MeshCNN to Identify Radiotherapy‑Suitable Lesions in Spine Oncology</h2>
+
+    <p class="abstract">
+      Radiotherapy selection for spinal metastases currently relies on clinical scoring systems (NOMS, LMNOP) that cannot directly assess tumour radiosensitivity from imaging.  
+      This proposal defines a fully self‑supervised pipeline that (1) segments contrast‑enhanced MRI of spinal tumours, (2) converts each lesion to a polygonal mesh, (3) processes the mesh with a hybrid MeshCNN‑MPNN architecture, and (4) predicts radiosensitivity (favourable, intermediate, unfavourable) with ≥ 80 % accuracy.  
+      The study will use 26 patient cases (10 radiosensitive, 10 radio‑resistant, 6 held‑out) and evaluate performance with k‑fold cross‑validation, reporting accuracy, precision, recall and F‑1.  By learning geometric edge‑features that correlate with histopathology, the model aims to provide an “image‑based biopsy” that can guide clinicians toward radiotherapy (SRS / c‑EBRT) versus surgical intervention, reducing unnecessary surgeries and improving patient outcomes.
+    </p>
+
+    <p class="authors">Radiel Health (Ahash Ganeshamoorthy, Rishabh Sharma, Nicholas Jiang, Jatin Mehta)</p>
+
+    <p class="links">
+      <a href="https://drive.google.com/file/d/1HVG9rRZOpT1zYIkHoo0SMs6EJ7pAFo4w/view">Proposal</a>
+    </p>
+  </div>
+</article>
+
+<article class="paper-card">
+  <!-- left column -->
+  <img src="img/carotid.png" alt="Digital twin of a carotid artery">
+
+  <!-- right column -->
+  <div class="details">
+    <h2 class="title">Hemodynamic Digital Twins to Guide Treatment Selection in Carotid Artery Stenosis</h2>
+
+    <p class="abstract">
+      Carotid artery stenosis (CAS) treatment decisions (CEA, stenting, or best‑medical therapy) are currently based on generic guidelines that ignore patient‑specific geometry and flow dynamics.  
+      We introduce **CaroDyn**, an AI‑enhanced computational‑fluid‑dynamics (CFD) framework that creates a personalized digital twin from 3‑D ultrasound‑derived meshes, runs transient CFD simulations, and predicts two hemodynamic risk metrics – Time‑Averaged Wall Shear Stress (TAWSS) and Oscillatory Shear Index (OSI).  
+      A convolutional‑mesh‑network surrogate replaces the expensive CFD solver, delivering metric predictions in seconds.  Risk stratification (high, medium, low) is mapped to clinical actions (surgical vs. medical).  
+      The pipeline will be validated on a cohort of symptomatic CAS patients with ≥ 50 % stenosis, using CFD‑generated ground truth to train and test the surrogate model, with performance measured by MAE, correlation, and classification accuracy of the risk categories.
+    </p>
+
+    <p class="authors">Ahash Ganeshamoorthy, Rishabh Sharma, Nicholas Jiang, Jatin Mehta</p>
+
+    <!-- <p class="venue">
+      Radiel Health – Internal Proposal, 2025.
+    </p> -->
+
+    <p class="links">
+      <a href="https://drive.google.com/file/d/1B6psIxea--54osMiqqU3cgxqb6nTbKdL/view">Proposal</a>
+    </p>
+  </div>
+</article>
+
+
 </body>
 </html>
