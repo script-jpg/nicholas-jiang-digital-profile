@@ -67,6 +67,36 @@
 </div>
 
  <hr style="margin: 1rem">
+
+<article class="paper-card">
+  <!-- left column -->
+  <img src="img/wires.png" alt="=metaphor of non-overlapping wires" />
+
+  <!-- right column -->
+  <div class="details">
+    <h2 class="title">The Unreasonable Effectiveness of Non‑Overlapping Failures in LLM Prover Ensembles</h2>
+
+    <p class="abstract">
+    Improving the reliability of mathematical reasoning in large language models (LLMs) is critical for applications in education, automated theorem proving, and formal verification. This paper investigates whether the functional diversity of prover models, specifically their non-overlapping failures, can be harnessed through ensembling to improve collective performance. We present a theoretical risk decomposition framework for an OR-aggregated ensemble of theorem provers, demonstrating that the ensemble's risk is equal to the average individual risk minus an 'ambiguity effect' that quantifies the diversity of the provers. Our analysis formalizes the intuition that diversity, defined as non-overlapping failures, is strictly beneficial in this context. We hypothesize that such ensembles may not only surpass the accuracy of any individual model but could also potentially generate proofs for statements previously unprovable by any single prover. Furthermore, we aim to investigate whether these techniques can be applied to current state-of-the-art models to push performance on more difficult, unsaturated benchmarks such as PutnamBench.
+    </p>
+
+    <p class="authors">
+    <strong>Nicholas Jiang</strong>, Joe Zhou, Rishabh Sharma
+    </p>
+
+    <!-- <p class="venue">
+      International Conference on Machine Learning, 2024.
+    </p> -->
+
+    <p class="links">
+      <a href="https://drive.google.com/file/d/1UDnicvpUA_vR3d6C-CDziduUvPPcghw2/view?usp=sharing">Proposal</a>
+      <!-- <a href="https://drive.google.com/file/d/1iI5C5-SiSii91iwVbWoxRqmUCRek_Zhq/view?usp=share_link">Video Presentation</a> -->
+      <!-- <a href="#">code</a> |
+      <a href="#">bibtex</a> -->
+    </p>
+  </div>
+</article>
+
 <article class="paper-card">
   <!-- left column -->
   <img src="img/diversity.png" alt="=visualization of different solvers" />
@@ -96,56 +126,5 @@
     </p>
   </div>
 </article>
-
-<article class="paper-card">
-  <!-- left column -->
-  <img src="img/spine.png" alt="3‑D mesh of a spinal lesion">
-
-  <!-- right column -->
-  <div class="details">
-    <h2 class="title">Using MeshCNN to Identify Radiotherapy‑Suitable Lesions in Spine Oncology</h2>
-
-    <p class="abstract">
-      Radiotherapy selection for spinal metastases currently relies on clinical scoring systems (NOMS, LMNOP) that cannot directly assess tumour radiosensitivity from imaging.  
-      This proposal defines a fully self‑supervised pipeline that (1) segments contrast‑enhanced MRI of spinal tumours, (2) converts each lesion to a polygonal mesh, (3) processes the mesh with a hybrid MeshCNN‑MPNN architecture, and (4) predicts radiosensitivity (favourable, intermediate, unfavourable) with ≥ 80 % accuracy.  
-      The study will use 26 patient cases (10 radiosensitive, 10 radio‑resistant, 6 held‑out) and evaluate performance with k‑fold cross‑validation, reporting accuracy, precision, recall and F‑1.  By learning geometric edge‑features that correlate with histopathology, the model aims to provide an “image‑based biopsy” that can guide clinicians toward radiotherapy (SRS / c‑EBRT) versus surgical intervention, reducing unnecessary surgeries and improving patient outcomes.
-    </p>
-
-    <p class="authors">Radiel Health (Ahash Ganeshamoorthy, Rishabh Sharma, <strong>Nicholas Jiang</strong>, Jatin Mehta)</p>
-
-    <p class="links">
-      <a href="https://drive.google.com/file/d/1HVG9rRZOpT1zYIkHoo0SMs6EJ7pAFo4w/view">Proposal</a>
-    </p>
-  </div>
-</article>
-
-<article class="paper-card">
-  <!-- left column -->
-  <img src="img/carotid.png" alt="Digital twin of a carotid artery">
-
-  <!-- right column -->
-  <div class="details">
-    <h2 class="title">Hemodynamic Digital Twins to Guide Treatment Selection in Carotid Artery Stenosis</h2>
-
-    <p class="abstract">
-      Carotid artery stenosis (CAS) treatment decisions (CEA, stenting, or best‑medical therapy) are currently based on generic guidelines that ignore patient‑specific geometry and flow dynamics.  
-      We introduce **CaroDyn**, an AI‑enhanced computational‑fluid‑dynamics (CFD) framework that creates a personalized digital twin from 3‑D ultrasound‑derived meshes, runs transient CFD simulations, and predicts two hemodynamic risk metrics – Time‑Averaged Wall Shear Stress (TAWSS) and Oscillatory Shear Index (OSI).  
-      A convolutional‑mesh‑network surrogate replaces the expensive CFD solver, delivering metric predictions in seconds.  Risk stratification (high, medium, low) is mapped to clinical actions (surgical vs. medical).  
-      The pipeline will be validated on a cohort of symptomatic CAS patients with ≥ 50 % stenosis, using CFD‑generated ground truth to train and test the surrogate model, with performance measured by MAE, correlation, and classification accuracy of the risk categories.
-    </p>
-
-    <p class="authors">Ahash Ganeshamoorthy, Rishabh Sharma, <strong>Nicholas Jiang</strong>, Jatin Mehta</p>
-
-    <!-- <p class="venue">
-      Radiel Health – Internal Proposal, 2025.
-    </p> -->
-
-    <p class="links">
-      <a href="https://drive.google.com/file/d/1B6psIxea--54osMiqqU3cgxqb6nTbKdL/view">Proposal</a>
-    </p>
-  </div>
-</article>
-
-
 </body>
 </html>
